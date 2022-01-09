@@ -1,31 +1,70 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans:wght@700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/main.css">
-</head>
-<body>
-    <div class="main">
-        <div class="container">
-            <div class="text">
-                <h1>
-                    <span>работаем с 11:00 до 22:00</span>
-                    Лучшие бургеры
-                </h1>
-                <p>Закажи наши фирменные бургеры или собери что-то своё,&nbsp;а&nbsp;наши курьеры доставят за&nbsp;30&nbsp;минут</p>
-                <a href="#">заказать</a>
-            </div>
-            <div class="visual"> 
-                <div class="bg"></div>
-                <img src="image/burger.png" alt="Burger">
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+.main {
+    background: linear-gradient(180deg, #0C4C7B -100%, #1E2F40 100%);
+}
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.text {
+    color: #FAF9F9;
+    flex: 0 0 580px;
+    padding-top: 170px;
+    padding-bottom: 170px;
+}
+h1 {
+    font-size: 120px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 120px;
+    margin-bottom: 40px;
+}
+h1 span {
+    color: #FBB731;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 38px;
+    display: block;
+    margin-bottom: 10px;
+}
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 19px;
+    line-height: 1.4;
+    margin-bottom: 42px;
+}
+a {
+    color: #1E2F40;
+    background-color: #FBB731;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 20px 45px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+.visual {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.bg {
+    width: 432px;
+    height: 100%;
+    background: linear-gradient(2.42deg, #F37335 -19.6%, #FBB731 100.79%, #FDC830 100.79%);
+}
+img {
+    width: 829px;
+    position: absolute;
+    right: -168px;
+}
